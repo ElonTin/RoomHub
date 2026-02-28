@@ -1,0 +1,11 @@
+namespace RoomHub.Domain.Entities;
+
+public class RoomAmenity
+{
+    public int RoomId { get; set; }
+    public int AmenityId { get; set; }
+
+    // Navigation
+    public virtual Room Room { get; set; } = null!;
+    public virtual Amenity Amenity { get; set; } = null!;
+}

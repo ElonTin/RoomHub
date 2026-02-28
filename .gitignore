@@ -1,0 +1,185 @@
+# ======================================
+# Chung (General ignores for all projects)
+# ======================================
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.lock
+*~
+
+# Temp & Logs
+*.tmp
+*.log
+*.logs
+temp/
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files (secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Debug & Coverage
+coverage/
+*.coverlet
+*.opencover.xml
+
+# Build artifacts
+build/
+dist/
+out/
+publish/
+
+# ======================================
+# .NET Specific (Backend)
+# ======================================
+
+# Visual Studio
+.vs/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+*.user
+*.userprefs
+*.pidb
+*.publishsettings
+orleans.codegen.cs
+
+# Bin & Obj
+**/bin/
+**/obj/
+
+# Packages & NuGet
+packages/
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# MSTest
+TestResults/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json  # Nhưng giữ nếu cần share settings
+
+# EF Migrations (nếu không muốn commit generated files)
+**/Migrations/*.Designer.cs  # Optional: Nếu dùng code-first, commit migrations
+
+# ======================================
+# Node.js / React / Vite Specific (Frontend)
+# ======================================
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Vite / React build
+vite.config.ts.timestamp-*
+public/vite.svg
+**/dist/
+**/build/
+
+# Parcel
+.parcel-cache
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# NPM
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# ESLint
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing (Vitest/Jest/Cypress)
+coverage/
+cypress/downloads/
+cypress/videos/
+cypress/screenshots/
+
+# ======================================
+# Docker Specific
+# ======================================
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+**/Dockerfile*
+**/docker-compose*
+
+# Docker volumes & images (nếu có)
+**/volumes/
+**/data/
+
+# ======================================
+# Docs & Scripts (Custom)
+# ======================================
+
+# Generated docs
+docs/generated/
+
+# Scripts temp
+scripts/temp/
+
+# Shared Types (generated)
+shared-types/generated/
+
+# ======================================
+# Misc (Dự phòng)
+# ======================================
+
+# Database files (local dev)
+*.db
+*.sqlite
+*.mdf
+*.ldf
+
+# Backup files
+*.bak
+*.gho
+
+# Ignore all .pdf files in root (nếu có attachments)
+*.pdf
+
+# But keep important files
+!.gitignore
+!README.md
+!LICENSE
