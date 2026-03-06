@@ -1,0 +1,33 @@
+# ==========================================
+# .NET Core & Visual Studio .gitignore
+# ==========================================
+
+# 1. Thư mục cấu hình cá nhân của Visual Studio (Rất nặng và không cần thiết)
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# 2. Thư mục chứa kết quả Build (File chạy)
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+
+# 3. Môi trường Mac/Linux (Dành cho team có người dùng Macbook)
+.DS_Store
+
+# 4. Các file database cục bộ (Nếu dùng SQLite, SQL Server LocalDB)
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite3
+
+# 5. Các file cấu hình chứa mật khẩu, secret keys cục bộ (Tùy chọn)
+# Mở comment dòng dưới nếu bạn không muốn đẩy file cấu hình môi trường dev lên
+# appsettings.Development.json
